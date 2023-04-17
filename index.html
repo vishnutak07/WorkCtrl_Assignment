@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form Submit</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="backend.php" method="post" class="form">
+        <div class="formData">
+          <label> Enter Your Name:</label>
+          <input type="text" placeholder="Name" name="user_name" />
+        </div>
+        <div class="formData">
+          Enter Your Number:
+          <input
+            type="number"
+            class="without_number"
+            placeholder="Mobile Number"
+            name="user_mno"
+          />
+        </div>
+        <div class="formData">
+          Enter Your City:
+          <input type="text" placeholder="City" name="user_city" />
+        </div>
+        <div
+          id="submit"
+          class="formData"
+        >
+          <input type="submit" name="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
